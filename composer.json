@@ -18,8 +18,7 @@
     }
   ],
   "require": {
-    "curl/curl": "^2.2",
-    "symfony/var-dumper": "^5.0"
+    "curl/curl": "^2.2"
   },
   "autoload": {
     "psr-0": {
