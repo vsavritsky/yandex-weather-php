@@ -1,14 +1,13 @@
 <?php
 
-namespace Skay\Exception;
+namespace Vsavritsky\Exception;
 
 /**
  * BaseException
  */
 class BaseException extends \Exception
 {
-
-   function __construct(string $msg, int $code = 0, Throwable $previous = null)
+   function __construct(string $msg, int $code, Throwable $previous = null)
    {
       parent::__construct($msg, $code, $previous);
    }

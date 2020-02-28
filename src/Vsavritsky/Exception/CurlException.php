@@ -1,15 +1,15 @@
 <?php
 
-namespace Skay\Exception;
+namespace Vsavritsky\Exception;
 
-use Skay\Exception\BaseException;
+use Vsavritsky\Exception\BaseException;
 
 /**
  * Class CurlException
  */
 class CurlException extends BaseException
 {
-   function __construct(string $msg, int $code = 0, Throwable $previous = null)
+   function __construct(string $msg, int $code, Throwable $previous = null)
    {
       parent::__construct($msg, $code, $previous);
    }
