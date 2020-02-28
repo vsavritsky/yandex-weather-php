@@ -1,22 +1,11 @@
 {
-  "name": "skaylic/yandex-weather-php",
+  "name": "vsavritsky/yandex-weather-php",
   "description": "Yandex.Weather uses proprietary forecasting technology Meteum to assess current weather conditions in specific locations on the territory of Russia and create forecasts for these geographic coordinates.",
   "keywords": ["yandex", "weather", "php"],
-  "homepage": "https://github.com/Skaylic/yandex-weather-php",
+  "homepage": "https://github.com/vsavritsky/yandex-weather-php",
   "type": "library",
   "license": "MIT",
   "version": "1.0.0",
-  "authors": [
-    {
-      "name": "skaylic",
-      "email": "info@skaylic.ru",
-      "homepage": "https://skaylic.ru"
-    },
-    {
-      "name": "skaylic",
-      "homepage": "https://github.com/Skaylic"
-    }
-  ],
   "require": {
     "curl/curl": "^2.2"
   },
