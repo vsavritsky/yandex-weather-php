@@ -91,6 +91,31 @@ class Response
         return $array[$value];
     }
 
+    public function getTempAir()
+    {
+        return $this->_data['fact']['temp'];
+    }
+
+    public function getTempWater()
+    {
+        return $this->_data['fact']['temp_water'];
+    }
+
+    public function getWindSpeed()
+    {
+        return $this->_data['fact']['wind_speed'];
+    }
+
+    public function getHumidity()
+    {
+        return $this->_data['fact']['humidity'];
+    }
+
+    public function getPrec()
+    {
+        return $this->_data['forecasts'][0]['parts']['day']['prec_prob'];
+    }
+
     public function getWindDir(string $value)
     {
         $array = [

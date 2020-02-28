@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsavritsky\Yandex\Weather;
+namespace Vsavritsky\Weather;
 
 use Vsavritsky\Weather\Response;
 use Curl\Curl;
@@ -138,7 +138,7 @@ class Api
             throw new \Vsavritsky\Exception\ErrorException($data['message'], $data['statusCode']);
         }
 
-        $this->_response = new \Vsavritsky\Yandex\Weather\Response($data);
+        $this->_response = new \Vsavritsky\Weather\Response($data);
 
         return $this;
     }
