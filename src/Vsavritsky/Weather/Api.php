@@ -125,7 +125,7 @@ class Api
         $curl->setHeader('X-Yandex-API-Key', $this->_key);
         $curl->get($apiUrl, $this->_filters);
         if ($curl->error) {
-            throw new \Vsavritsky\Exception\CurlException($curl);
+            throw new \Vsavritsky\Exception\CurlException($curl->getHttpStatus(), $curl->error_code);
         }
         $fp = fopen(BASE_DIR . '/new_weather.json', 'w+');
         fwrite($fp, $curl->response);
